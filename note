@@ -1,0 +1,18 @@
+#dajango 
+创建项目[命令行]
+dajango-admin startproject Test
+
+wsgi:
+Web Server Gateway Interface
+
+|------|              |----- |        wsgi             |------------|
+|CLIENT| --request -->|SERVER|--application callable-->| APPLICATION|
+|------|<- request--  |----- |<--iterator , respone--- | -----------|
+
+运行
+ python manage.py runserver 0.0.0.0:80
+
+ 可在setting.py ALLOWDEDHOST 中添加调试ip
+
+创建app 名为 sales
+ python manage.py startapp sales
